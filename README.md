@@ -4,7 +4,7 @@ A song recommendation script that uses unsupervised machine learning to find sim
 ## Motivation
 I am a big music listener, but earlier my playlist stopped expanding at the rate it used to. To find new music that alligns with my music and to further explore Unsupervised Machine Learning, I created NewVibe.
 
-## Tech Stack
+## Tech
 * **Language:** Python
 * **Libraries:** Pandas, Scikit-Learn, Matplotlib, Seaborn
 * **Tools:** Jupyter Notebooks
