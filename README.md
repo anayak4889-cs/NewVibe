@@ -2,7 +2,7 @@
 A song recommendation script that uses unsupervised machine learning to find similar songs that match the audio profiles of tracks.
 
 ## Motivation
-I am a big music listener, but earlier my playlist stopped expanding at the rate it used to. To find new music that alligns with my music and to further explore Unsupervised Machine Learning, I created NewVibe.
+I am a big music listener, but earlier my playlist stopped expanding at the rate it used to. To find new music that aligns with my music and to further explore Unsupervised Machine Learning, I created NewVibe.
 
 ## Tech Stack
 * **Language:** Python
@@ -10,7 +10,7 @@ I am a big music listener, but earlier my playlist stopped expanding at the rate
 * **Tools:** Jupyter Notebooks
 
 ## Methodology
-1. **Feature Selection** I put all 13 numberical values into a correlation heatmap using Seaborn. I found a strong, positive correlation between Energy and Loudness. I also found a strong, inverse correlation between Energy and Acoustiness. Week audio features like Popularity are going to be excluded to avoid noise, leaving me with 8 features: [`danceability`, `energy`, `loudness`, `speechiness`, `acousticness`, `instrumentalness`, `tempo`, `valence`]
+1. **Feature Selection** I put all 13 numberical values into a correlation heatmap using Seaborn. I found a strong, positive correlation between Energy and Loudness. I also found a strong, inverse correlation between Energy and Acoustiness. Weak audio features like Popularity are going to be excluded to avoid noise, leaving me with 8 features: [`danceability`, `energy`, `loudness`, `speechiness`, `acousticness`, `instrumentalness`, `tempo`, `valence`]
 
 2. **Data Cleaning** Dropped all null value rows in dataset and make the track_name and artists lowercased for easier use in the future. 
 
@@ -20,7 +20,7 @@ I am a big music listener, but earlier my playlist stopped expanding at the rate
 
 5. **User Input** Taking a song name and a number of recommendations as inputs. Finds song's numerical values and cluster number from the dataset.
 
-6. **Recommendation** Computing Euclidean distances between musical values of other songs in cluster with user's song values to order songs based on similarity. Returning the top songs based on the number of recomendations the user requested.
+6. **Recommendation** Computing Euclidean distances between musical values of other songs in cluster with user's song values to order songs based on similarity. Returning the top songs based on the number of recommendations the user requested.
 
 
 ## Key Features
@@ -39,7 +39,7 @@ I am a big music listener, but earlier my playlist stopped expanding at the rate
 **Setup**
 1. Clone the repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/NewVibe.git
+   git clone https://github.com/aryannayakcs/NewVibe.git
    cd NewVibe
    ```
 
